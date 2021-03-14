@@ -74,9 +74,22 @@
   --ion-color-light-contrast-rgb: 0, 0, 0;
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
+
+  --color-toolbar-background: var(--ion-color-tertiary);
+  --color-toolbar-text: var(--ion-color-light);
+  --ion-background-color: var(--ion-color-light);
+  --color-background-color: var(--ion-color-primary-tint);
 }
 
+
 @media (prefers-color-scheme: dark) {
+
+  :root {
+    --color-toolbar-background: #1f1f1f;
+    --color-toolbar-text: white;
+    --ion-background-color: var(--ion-background-color);
+    --color-background-color: var(--ion-background-color);
+  }
   /*
    * Dark Colors
    * -------------------------------------------

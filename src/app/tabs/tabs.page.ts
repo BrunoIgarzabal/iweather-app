@@ -7,6 +7,14 @@ import { Component } from '@angular/core';
 })
 export class TabsPage {
 
-  constructor() {}
+  darkMode: boolean = false;
+
+  constructor() {
+    this.changeDarkMode();
+  }
+
+  changeDarkMode() {
+    this.darkMode = document.body.getAttribute('color-theme') == 'dark' ? true : false;
+  }
 
 }
